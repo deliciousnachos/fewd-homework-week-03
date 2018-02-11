@@ -98,8 +98,7 @@ section.hero {
   float: right;
 /*  width: 35%;*/
   background-color: rgba(255,255,255,.8);
-  box-sizing: border-box;
-  padding: 50px;
+  padding: 50px 40px 50px 50px;
   border: 1px solid black;
   margin-top: 20px;
 }
@@ -111,7 +110,7 @@ section.hero {
 }
 
 .highlight-box p {
-  max-width: 400px;
+  max-width: 350px;
 }
 
 .highlight-box .button {
@@ -145,6 +144,7 @@ h3 {
   padding: 30px 40px 20px 40px;
   width: 33%;
   float: left;
+  display: inline-block;
 }
 
 .small-action a {
@@ -168,4 +168,40 @@ footer {
 a:hover {
   color: red;
 }
+
+/****** Media Queries ******/
+
+@media only screen and (max-width: 900px) {
+  .small-action {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .more-actions {
+    padding: 0;
+  }
+  .small-action {
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .side-border {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
